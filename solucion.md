@@ -8,14 +8,24 @@
  
 {
         "result" : "total",
+        
         "timeMillis" : 7730,
+        
         "counts" : {
+        
                 "input" : 1000000,
+                
                 "emit" : 1000000,
+                
                 "reduce" : 86683,
+                
                 "output" : 26
+                
         },
+        
         "ok" : 1
+        
 }
+
 
 db.total.find({})
