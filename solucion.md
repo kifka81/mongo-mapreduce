@@ -1,8 +1,11 @@
-# Solución ejercicio PEOPLE
+## Solución ejercicio PEOPLE
 
  let map = function(){emit(this.name,this.points)};
+ 
  let reduce = function(name,points){return Array.sum(points);};
+ 
  db.personas.mapReduce(map, reduce, {out:"total"});
+ 
 {
         "result" : "total",
         "timeMillis" : 7730,
@@ -14,4 +17,5 @@
         },
         "ok" : 1
 }
+
 db.total.find({})
