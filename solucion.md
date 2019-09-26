@@ -7,6 +7,7 @@
  db.personas.mapReduce(map, reduce, {out:"total"});
  
 {
+
         "result" : "total",
         
         "timeMillis" : 7730,
